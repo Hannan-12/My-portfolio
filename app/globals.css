@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Progress bar */
+#progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #6366f1, #8b5cf6, #06b6d4);
+  z-index: 9999;
+  transition: width 0.2s ease-out;
+  pointer-events: none;
+}
+
+/* Typing cursor */
+.typing-cursor::after {
+  content: '|';
+  animation: blink 0.8s infinite;
+  color: #a5b4fc;
+  margin-left: 2px;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+/* Float animation */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-14px); }
+}
+.float-anim {
+  animation: float 5s ease-in-out infinite;
+}
+
+/* Timeline dot pulse */
+@keyframes pulse-dot {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(99,102,241,0.5); }
+  50% { box-shadow: 0 0 0 8px rgba(99,102,241,0); }
+}
+.timeline-dot {
+  animation: pulse-dot 2.5s infinite;
+}
+
+/* Scroll reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Mesh gradient — dark */
+.mesh-bg {
+  background-color: #0b0b14;
+  background-image:
+    radial-gradient(at 15% 25%, rgba(99,102,241,0.18) 0px, transparent 55%),
+    radial-gradient(at 80% 10%, rgba(139,92,246,0.14) 0px, transparent 50%),
+    radial-gradient(at 55% 85%, rgba(6,182,212,0.1) 0px, transparent 55%);
+}
+
+/* Mesh gradient — light */
+:root:not(.dark) .mesh-bg {
+  background-color: #eef2ff;
+  background-image:
+    radial-gradient(at 15% 25%, rgba(99,102,241,0.2) 0px, transparent 55%),
+    radial-gradient(at 80% 10%, rgba(139,92,246,0.15) 0px, transparent 50%),
+    radial-gradient(at 55% 85%, rgba(6,182,212,0.12) 0px, transparent 55%);
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6, #06b6d4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
