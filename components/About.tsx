@@ -28,7 +28,7 @@ export default function About() {
 
           <div className="grid grid-cols-2 gap-4">
             {[
-              { label: "Years Learning", value: "3+" },
+              { label: "GitHub Repos", value: "30+" },
               { label: "Projects Built", value: "10+" },
               { label: "Internships", value: "2" },
               { label: "Technologies", value: "10+" },
