@@ -6,6 +6,15 @@ import { FiExternalLink, FiGithub, FiChevronDown, FiChevronUp } from "react-icon
 
 const projects = [
   {
+    name: "Nookbite",
+    desc: "A full-stack restaurant ordering and point-of-sale platform — online menu and checkout for customers, plus an admin/POS back office for staff, attendance, inventory, vendor ledgers, and live sales analytics.",
+    image: "/nookbite.png",
+    imgPos: "object-top",
+    link: "https://thenookbite.com",
+    github: null,
+    tech: ["Next.js", "Supabase", "POS", "Redis", "TypeScript"],
+  },
+  {
     name: "DevSkill Tracker",
     desc: "An AI-powered skill tracking platform that helps developers assess, track, and improve their technical skills with a leaderboard system.",
     image: "/devskill.png",
