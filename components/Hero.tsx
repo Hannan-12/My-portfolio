@@ -108,7 +108,14 @@ export default function Hero() {
           <div className="relative float-anim">
             <div className="absolute inset-0 rounded-full bg-linear-to-br from-indigo-600 to-violet-600 blur-2xl opacity-25 scale-110" />
             <div className="relative w-56 h-56 sm:w-72 sm:h-72 rounded-full border-2 border-white/10 overflow-hidden ring-4 ring-indigo-500/20">
-              <Image src="/hannan.jpg" alt="Muhammad Hannan Hafeez" fill className="object-cover object-top" priority />
+              <Image
+                src="/hannan.jpg"
+                alt="Muhammad Hannan Hafeez"
+                fill
+                sizes="(max-width: 640px) 224px, 288px"
+                className="object-cover object-top"
+                priority
+              />
             </div>
           </div>
         </div>

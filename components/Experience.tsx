@@ -29,18 +29,6 @@ const experience = [
     ],
     tech: ["HTML", "CSS", "JavaScript", "ASP.NET"],
   },
-  {
-    role: "Content Writer",
-    company: "Techno Bazz",
-    location: "",
-    period: "October 2023 – August 2024",
-    bullets: [
-      "Created engaging and SEO-friendly articles, blogs, and product descriptions.",
-      "Researched tech-related topics to produce accurate, informative content.",
-      "Collaborated with the web development team to align content with site design and user flow.",
-    ],
-    tech: ["SEO", "Content Strategy", "Technical Writing"],
-  },
 ];
 
 export default function Experience() {

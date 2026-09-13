@@ -6,6 +6,15 @@ import { FiExternalLink, FiGithub, FiChevronDown, FiChevronUp } from "react-icon
 
 const projects = [
   {
+    name: "RideOnClick",
+    desc: "A luxury chauffeur and airport transfer platform for Dubai, Abu Dhabi, and Sharjah — point-to-point rides, flight-tracked airport transfers, and hourly city tours with live booking tracking and WhatsApp-based driver confirmation.",
+    image: "/rideonclick.png",
+    imgPos: "object-top",
+    link: "https://rideonclick.com",
+    github: null,
+    tech: ["Next.js", "Chauffeur Booking", "Live Tracking"],
+  },
+  {
     name: "Nookbite",
     desc: "A full-stack restaurant ordering and point-of-sale platform — online menu and checkout for customers, plus an admin/POS back office for staff, attendance, inventory, vendor ledgers, and live sales analytics.",
     image: "/nookbite.png",
@@ -111,6 +120,7 @@ export default function Projects() {
                   src={p.image}
                   alt={p.name}
                   fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   className={`object-cover ${p.imgPos} group-hover:scale-105 transition-transform duration-500`}
                 />
                 <div className="absolute inset-0 bg-linear-to-t from-[#0b0b14] via-transparent to-transparent opacity-60" />
