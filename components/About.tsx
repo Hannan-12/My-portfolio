@@ -13,16 +13,14 @@ export default function About() {
         <div className="grid md:grid-cols-2 gap-10 items-center">
           <div>
             <p className="text-slate-300 text-base leading-relaxed mb-5">
-              Hi! I&apos;m <span className="text-white font-semibold">Muhammad Hannan Hafeez</span>, a Full-Stack
-              Developer & Software Engineer passionate about building modern, responsive, and user-friendly web
-              applications. I specialize in React, Next.js, Angular, ASP.NET, Python, HTML, CSS, and JavaScript,
-              transforming UI/UX designs into fully functional, scalable applications.
+              I&apos;m <span className="text-white font-semibold">Muhammad Hannan Hafeez</span>, a software engineer
+              and full-stack developer based in Lahore, Pakistan. I work with React, Next.js, Angular, ASP.NET, and
+              Python to build web applications, from implementing designs to connecting them with backend services.
             </p>
             <p className="text-slate-400 text-base leading-relaxed">
-              I&apos;ve gained hands-on experience through internships and projects, developing e-commerce platforms,
-              dynamic dashboards, and content-rich websites that combine performance, clean design, and seamless
-              functionality. I thrive on solving problems with code and continuously learning cutting-edge technologies
-              to deliver exceptional digital experiences — from front-end to back-end.
+              My experience includes two internships and projects ranging from restaurant ordering and booking systems
+              to dashboards and mobile apps. I enjoy working through practical problems, learning new tools, and
+              improving the details that make an application useful.
             </p>
           </div>
 

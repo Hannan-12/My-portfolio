@@ -7,7 +7,7 @@ import { FiExternalLink, FiGithub, FiChevronDown, FiChevronUp } from "react-icon
 const projects = [
   {
     name: "RideOnClick",
-    desc: "A luxury chauffeur and airport transfer platform for Dubai, Abu Dhabi, and Sharjah — point-to-point rides, flight-tracked airport transfers, and hourly city tours with live booking tracking and WhatsApp-based driver confirmation.",
+    desc: "A chauffeur booking platform for Dubai, Abu Dhabi, and Sharjah, with airport transfers, hourly city tours, booking updates, and driver confirmation through WhatsApp.",
     image: "/rideonclick.png",
     imgPos: "object-top",
     link: "https://rideonclick.com",
@@ -16,7 +16,7 @@ const projects = [
   },
   {
     name: "Nookbite",
-    desc: "A full-stack restaurant ordering and point-of-sale platform — online menu and checkout for customers, plus an admin/POS back office for staff, attendance, inventory, vendor ledgers, and live sales analytics.",
+    desc: "A restaurant platform with online ordering and checkout, plus a staff dashboard for attendance, inventory, vendor accounts, and sales.",
     image: "/nookbite.png",
     imgPos: "object-top",
     link: "https://thenookbite.com",
@@ -25,7 +25,7 @@ const projects = [
   },
   {
     name: "DevSkill Tracker",
-    desc: "An AI-powered skill tracking platform that helps developers assess, track, and improve their technical skills with a leaderboard system.",
+    desc: "A skill tracker that uses AI to assess developers’ technical skills and show progress on a leaderboard.",
     image: "/devskill.png",
     imgPos: "object-top",
     link: "https://fyp-ten-gray.vercel.app",
@@ -34,7 +34,7 @@ const projects = [
   },
   {
     name: "GoHighReview",
-    desc: "A modern review management platform for collecting and showcasing customer reviews to boost business credibility and online reputation.",
+    desc: "A platform for businesses to collect and display customer reviews.",
     image: "/Gohighreview.png",
     imgPos: "object-top",
     link: "https://www.gohighreview.de/",
@@ -43,7 +43,7 @@ const projects = [
   },
   {
     name: "Zaraiverse",
-    desc: "A Pakistan-focused agri-tech mobile app connecting farmers, agricultural experts, and sellers — featuring a marketplace, expert consultation, bilingual (English/Urdu) support, and multi-role authentication.",
+    desc: "A mobile app for farmers, agricultural experts, and sellers in Pakistan, with a marketplace, expert consultations, and English and Urdu support.",
     image: "/Zaraiverse.png",
     imgPos: "object-[center_15%]",
     link: "https://github.com/Hannan-12/Zaraiverse",
@@ -52,7 +52,7 @@ const projects = [
   },
   {
     name: "Apayments Network",
-    desc: "A cryptocurrency platform integrating dual APIs for seamless buying and selling functionality.",
+    desc: "A cryptocurrency platform that connects two APIs to support buying and selling.",
     image: "/Apayments.png",
     imgPos: "object-top",
     link: "https://www.apaymentsnetwork.com/",
@@ -61,7 +61,7 @@ const projects = [
   },
   {
     name: "Blog Website",
-    desc: "A clean and modern blog platform built with Next.js and Tailwind CSS with dynamic routing.",
+    desc: "A blog built with Next.js and Tailwind CSS, with pages generated from dynamic routes.",
     image: "/blog.png",
     imgPos: "object-top",
     link: "https://blog-website-one-taupe.vercel.app",
@@ -70,7 +70,7 @@ const projects = [
   },
   {
     name: "Personal Portfolio (Client)",
-    desc: "A portfolio website built with React showcasing creative projects and smooth animations.",
+    desc: "A React portfolio site for a client, featuring project galleries and animated page elements.",
     image: "/portfolio.png",
     imgPos: "object-top",
     link: "https://moiz-protfolio.vercel.app/",
@@ -79,7 +79,7 @@ const projects = [
   },
   {
     name: "Megaohm",
-    desc: "A modern e-commerce platform for electrical tools featuring an AI-powered chatbot integration.",
+    desc: "An online store for electrical tools with an AI chatbot.",
     image: "/megaohm.png",
     imgPos: "object-top",
     link: "https://megaohm.ae",
@@ -88,7 +88,7 @@ const projects = [
   },
   {
     name: "Book Website",
-    desc: "A responsive book showcase website with theme toggle, smooth navigation, and clean UI.",
+    desc: "A book showcase site with a theme toggle and responsive layout.",
     image: "/book.png",
     imgPos: "object-top",
     link: "https://book-website-git-main-hannan-12s-projects.vercel.app/",

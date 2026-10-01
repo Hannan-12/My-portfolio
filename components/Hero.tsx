@@ -58,8 +58,8 @@ export default function Hero() {
           </h2>
 
           <p className="text-slate-400 text-base sm:text-lg leading-relaxed max-w-lg mb-8">
-            Full Stack Developer specializing in creating modern, responsive, and
-            user-friendly web applications — from front-end to back-end.
+            I build full-stack web applications with React, Next.js, Angular, and
+            ASP.NET, working across both the interface and the backend.
           </p>
 
           <div className="flex flex-wrap gap-3 justify-center md:justify-start mb-10">

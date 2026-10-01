@@ -7,13 +7,13 @@ const education = [
     degree: "BS Software Engineering",
     institution: "PAF-IAST (Pak-Austria Fachhochschule)",
     period: "2022 – 2026",
-    desc: "Currently pursuing a Bachelor of Science in Software Engineering. This comprehensive program provides a rigorous technical framework in core computing disciplines, including Algorithms, Database Systems, and Software Architecture.",
+    desc: "Currently studying Software Engineering, with coursework in algorithms, databases, and software architecture.",
   },
   {
     degree: "FSc Pre-Engineering",
     institution: "Punjab College, Mandi Bahauddin",
     period: "2020 – 2022",
-    desc: "Successfully completed my Higher Secondary School Certificate in Pre-Engineering, providing a strong foundation in mathematics and physics that underpins my analytical approach to software development.",
+    desc: "Completed FSc Pre-Engineering, studying mathematics, physics, and other core subjects.",
   },
 ];
 

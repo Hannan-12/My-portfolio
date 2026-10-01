@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Muhammad Hannan Hafeez — Full Stack Developer",
+  title: "Muhammad Hannan Hafeez | Full Stack Developer",
   description:
     "Software Engineer & Full Stack Developer specializing in React, Next.js, Angular, and ASP.NET. Based in Lahore, Pakistan.",
 };
