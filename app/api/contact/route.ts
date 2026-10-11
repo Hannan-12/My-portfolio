@@ -1,3 +1,5 @@
+import { Resend } from "resend";
+
 const MAX_REQUESTS = 5;
 const RATE_WINDOW_MS = 10 * 60 * 1000;
 const MAX_BODY_BYTES = 12_000;
@@ -140,26 +142,24 @@ export async function POST(request: Request) {
     return jsonError("Spam verification failed. Please try again.", 400);
   }
 
-  const accessKey = process.env.WEB3FORMS_ACCESS_KEY;
-  if (!accessKey) return jsonError("The contact form is not configured.", 503);
+  const apiKey = process.env.RESEND_API_KEY;
+  const toEmail = process.env.CONTACT_TO_EMAIL;
+  if (!apiKey || !toEmail) {
+    console.error("Contact form configuration error: RESEND_API_KEY and CONTACT_TO_EMAIL must both be set.");
+    return jsonError("Your message could not be sent.", 503);
+  }
 
   try {
-    const response = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      headers: { "Content-Type": "application/json", Accept: "application/json" },
-      body: JSON.stringify({
-        access_key: accessKey,
-        from_name: name,
-        email,
-        replyto: email,
-        subject: `Portfolio contact from ${name}`,
-        message,
-      }),
-      signal: AbortSignal.timeout(10_000),
+    const resend = new Resend(apiKey);
+    const { data, error } = await resend.emails.send({
+      from: "Portfolio Contact <onboarding@resend.dev>",
+      to: toEmail,
+      replyTo: email,
+      subject: `New portfolio message from ${name}`,
+      text: message,
     });
-    const result = (await response.json().catch(() => null)) as { success?: boolean } | null;
 
-    if (!response.ok || result?.success !== true) {
+    if (error || !data) {
       return jsonError("Your message could not be sent.", 502);
     }
 

@@ -22,7 +22,7 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 
 ## Contact form
 
-Copy `.env.example` to `.env.local` and set `WEB3FORMS_ACCESS_KEY`. Set the same server-only variable in your deployment environment. Do not prefix it with `NEXT_PUBLIC_`. The contact API uses a per-process in-memory rate limit; use a shared store if deploying multiple server instances. `TURNSTILE_SECRET_KEY` is optional and should only be set after adding a Turnstile widget to the form.
+Copy `.env.example` to `.env.local` and set `RESEND_API_KEY` to your Resend API key and `CONTACT_TO_EMAIL` to the recipient email address. Set both server-only variables in your deployment environment. Do not prefix them with `NEXT_PUBLIC_`. Messages are sent from `Portfolio Contact <onboarding@resend.dev>` with the visitor's email as the reply-to address. The contact API uses a per-process in-memory rate limit; use a shared store if deploying multiple server instances. `TURNSTILE_SECRET_KEY` is optional and should only be set after adding a Turnstile widget to the form.
 
 ## Check site links
 
