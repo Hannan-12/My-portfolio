@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 const links = ["About", "Expertise", "Education", "Experience", "Projects", "Contact"];
 
@@ -39,9 +40,16 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between">
-        <a href="#" className="text-white font-bold text-lg tracking-tight">
+        <a href="#" className="flex items-center gap-2.5 text-white font-bold text-lg tracking-tight">
+          <Image
+            src="/hannan-logo.svg"
+            alt="Hannan logo"
+            width={38}
+            height={38}
+            priority
+            className="rounded-xl"
+          />
           <span className="gradient-text">Hannan</span>
-          <span className="text-slate-400">.</span>
         </a>
 
         <ul className="hidden md:flex items-center gap-1">
@@ -63,7 +71,7 @@ export default function Navbar() {
             <a
               href="/hannan-cv.pdf"
               target="_blank"
-              className="ml-2 px-4 py-1.5 rounded-lg text-sm font-semibold bg-indigo-600 hover:bg-indigo-500 text-white transition-colors duration-200"
+              className="ml-2 px-4 py-1.5 rounded-lg border border-indigo-500/40 text-indigo-300 hover:border-indigo-400 hover:bg-indigo-500/10 hover:text-white text-sm font-semibold transition-colors duration-200"
             >
               Resume
             </a>

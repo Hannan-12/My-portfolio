@@ -7,7 +7,7 @@ const education = [
     degree: "BS Software Engineering",
     institution: "PAF-IAST (Pak-Austria Fachhochschule)",
     period: "2022 – 2026",
-    desc: "Currently studying Software Engineering, with coursework in algorithms, databases, and software architecture.",
+    desc: "Graduated with a Bachelor of Science in Software Engineering. Coursework included algorithms, databases, and software architecture.",
   },
   {
     degree: "FSc Pre-Engineering",
@@ -21,7 +21,7 @@ export default function Education() {
   const ref = useReveal();
 
   return (
-    <section id="education" className="py-24 px-5 max-w-6xl mx-auto">
+    <section id="education" className="py-16 px-5 max-w-6xl mx-auto">
       <div ref={ref} className="reveal">
         <p className="text-indigo-400 font-semibold text-sm uppercase tracking-widest mb-2">Academic background</p>
         <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-10">Education</h2>

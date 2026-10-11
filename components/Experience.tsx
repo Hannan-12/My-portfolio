@@ -6,7 +6,6 @@ const experience = [
   {
     role: "Front-End Developer Intern",
     company: "Dextrologix Pvt Ltd",
-    location: "Lahore",
     period: "July 2023 – September 2023",
     bullets: [
       "Built responsive web pages with HTML, CSS, and JavaScript.",
@@ -18,8 +17,7 @@ const experience = [
   },
   {
     role: "Web Developer Intern",
-    company: "E-stamping Office, Arfa Karim Tower",
-    location: "Lahore",
+    company: "PITB E-Stamping Office",
     period: "July 2024 – August 2024",
     bullets: [
       "Built web pages with HTML, CSS, and JavaScript.",
@@ -35,7 +33,7 @@ export default function Experience() {
   const ref = useReveal();
 
   return (
-    <section id="experience" className="py-24 px-5 max-w-6xl mx-auto">
+    <section id="experience" className="py-16 px-5 max-w-6xl mx-auto">
       <div ref={ref} className="reveal">
         <p className="text-indigo-400 font-semibold text-sm uppercase tracking-widest mb-2">Where I&apos;ve worked</p>
         <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-10">Work Experience</h2>
@@ -55,7 +53,7 @@ export default function Experience() {
                   </span>
                 </div>
                 <p className="text-violet-300 font-medium text-sm mb-4">
-                  {exp.company}{exp.location ? `, ${exp.location}` : ""}
+                  {exp.company}
                 </p>
                 <ul className="space-y-1.5 mb-5">
                   {exp.bullets.map((b, j) => (

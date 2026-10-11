@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import { FiGithub, FiLinkedin, FiMail, FiDownload } from "react-icons/fi";
+import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
 
 const roles = ["Full Stack Developer", "Software Engineer", "React & Next.js Dev"];
 
@@ -41,16 +41,16 @@ export default function Hero() {
         }}
       />
 
-      <div className="relative z-10 max-w-6xl mx-auto px-5 py-24 flex flex-col-reverse md:flex-row items-center justify-between gap-16 w-full">
+      <div className="relative z-10 max-w-6xl mx-auto px-5 py-16 flex flex-col-reverse md:flex-row items-center justify-between gap-8 md:gap-10 w-full">
         <div className="flex-1 text-center md:text-left">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-sm font-medium mb-6">
             <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
-            Available for opportunities
+            Open to full-time and freelance work
           </div>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-4">
             Hi, I&apos;m{" "}
-            <span className="gradient-text">Muhammad Hannan</span>
+            <span className="gradient-text">Muhammad Hannan Hafeez</span>
           </h1>
 
           <h2 className="text-xl sm:text-2xl font-semibold text-slate-300 mb-6 h-8">
@@ -74,13 +74,6 @@ export default function Hero() {
               className="px-6 py-3 rounded-xl border border-white/10 text-slate-300 hover:text-white hover:border-white/20 hover:bg-white/5 font-semibold transition-all duration-200 hover:-translate-y-0.5"
             >
               Contact Me
-            </a>
-            <a
-              href="/hannan-cv.pdf"
-              target="_blank"
-              className="px-6 py-3 rounded-xl border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/10 font-semibold flex items-center gap-2 transition-all duration-200 hover:-translate-y-0.5"
-            >
-              <FiDownload className="w-4 h-4" /> Resume
             </a>
           </div>
 

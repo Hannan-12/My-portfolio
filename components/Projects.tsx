@@ -12,7 +12,7 @@ const projects = [
     imgPos: "object-top",
     link: "https://rideonclick.com",
     github: null,
-    tech: ["Next.js", "Chauffeur Booking", "Live Tracking"],
+    tech: ["Next.js"],
   },
   {
     name: "Nookbite",
@@ -21,7 +21,7 @@ const projects = [
     imgPos: "object-top",
     link: "https://thenookbite.com",
     github: null,
-    tech: ["Next.js", "Supabase", "POS", "Redis", "TypeScript"],
+    tech: ["Next.js", "Supabase", "Redis", "TypeScript"],
   },
   {
     name: "DevSkill Tracker",
@@ -30,7 +30,7 @@ const projects = [
     imgPos: "object-top",
     link: "https://fyp-ten-gray.vercel.app",
     github: "https://github.com/Hannan-12/FYP",
-    tech: ["Next.js", "AI", "Firebase", "Leaderboard"],
+    tech: ["Next.js", "Firebase"],
   },
   {
     name: "GoHighReview",
@@ -48,7 +48,7 @@ const projects = [
     imgPos: "object-[center_15%]",
     link: "https://github.com/Hannan-12/Zaraiverse",
     github: "https://github.com/Hannan-12/Zaraiverse",
-    tech: ["React Native", "Expo", "Axios", "i18n", "Agri-Tech"],
+    tech: ["React Native", "Expo", "Axios"],
   },
   {
     name: "Apayments Network",
@@ -57,7 +57,7 @@ const projects = [
     imgPos: "object-top",
     link: "https://www.apaymentsnetwork.com/",
     github: null,
-    tech: ["React", "API Integration", "Crypto"],
+    tech: ["React"],
   },
   {
     name: "Blog Website",
@@ -75,7 +75,7 @@ const projects = [
     imgPos: "object-top",
     link: "https://moiz-protfolio.vercel.app/",
     github: null,
-    tech: ["React", "CSS Animations", "Vercel"],
+    tech: ["React"],
   },
   {
     name: "Megaohm",
@@ -84,7 +84,7 @@ const projects = [
     imgPos: "object-top",
     link: "https://megaohm.ae",
     github: null,
-    tech: ["E-commerce", "AI Chatbot", "Responsive"],
+    tech: [],
   },
   {
     name: "Book Website",
@@ -101,10 +101,10 @@ export default function Projects() {
   const ref = useReveal();
   const [showAll, setShowAll] = useState(false);
 
-  const visible = showAll ? projects : projects.slice(0, 3);
+  const visible = showAll ? projects : projects.slice(0, 6);
 
   return (
-    <section id="projects" className="py-24 px-5 max-w-6xl mx-auto">
+    <section id="projects" className="py-16 px-5 max-w-6xl mx-auto">
       <div ref={ref} className="reveal">
         <p className="text-indigo-400 font-semibold text-sm uppercase tracking-widest mb-2">What I&apos;ve built</p>
         <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-10">Featured Projects</h2>
@@ -130,13 +130,15 @@ export default function Projects() {
                 <h3 className="text-white font-bold text-base mb-2">{p.name}</h3>
                 <p className="text-slate-400 text-sm leading-relaxed mb-4 flex-1">{p.desc}</p>
 
-                <div className="flex flex-wrap gap-1.5 mb-4">
-                  {p.tech.map((t) => (
-                    <span key={t} className="text-xs px-2 py-0.5 rounded-md bg-indigo-500/10 text-indigo-300 border border-indigo-500/20">
-                      {t}
-                    </span>
-                  ))}
-                </div>
+                {p.tech.length > 0 && (
+                  <div className="flex flex-wrap gap-1.5 mb-4">
+                    {p.tech.map((t) => (
+                      <span key={t} className="text-xs px-2 py-0.5 rounded-md bg-indigo-500/10 text-indigo-300 border border-indigo-500/20">
+                        {t}
+                      </span>
+                    ))}
+                  </div>
+                )}
 
                 <div className="flex gap-3 pt-3 border-t border-white/6">
                   <a
@@ -171,7 +173,7 @@ export default function Projects() {
             {showAll ? (
               <><FiChevronUp className="w-4 h-4" /> Show Less</>
             ) : (
-              <><FiChevronDown className="w-4 h-4" /> Show More ({projects.length - 3} more)</>
+              <><FiChevronDown className="w-4 h-4" /> Show More ({projects.length - 6} more)</>
             )}
           </button>
         </div>

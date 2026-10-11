@@ -20,6 +20,14 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Contact form
+
+Copy `.env.example` to `.env.local` and set `WEB3FORMS_ACCESS_KEY`. Set the same server-only variable in your deployment environment. Do not prefix it with `NEXT_PUBLIC_`. The contact API uses a per-process in-memory rate limit; use a shared store if deploying multiple server instances. `TURNSTILE_SECRET_KEY` is optional and should only be set after adding a Turnstile widget to the form.
+
+## Check site links
+
+Run `npm run check:links` to check external links in the site components and confirm the CV file exists. Set `SITE_URL` to also check the deployed CV URL.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
